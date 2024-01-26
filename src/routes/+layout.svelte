@@ -15,7 +15,7 @@
 	<meta property="og:url" content="https://gianlaiza-wedding.netlify.app" />
 	<meta property="og:title" content="Gian & Laiza's Wedding" />
 	<meta property="og:description" content="You're invited to Gian and Laiza's wedding." />
-	<meta property="og:image" content="/ogimage.png" />
+	<meta property="og:image" content="https://gianlaiza-wedding.netlify.app/ogimage.png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 
