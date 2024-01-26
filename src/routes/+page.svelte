@@ -1,12 +1,10 @@
 <script lang="ts">
 	import styleToCss from 'style-object-to-css-string';
 	import Marquee from 'svelte-fast-marquee';
-	import { PageFlip } from 'page-flip';
+	import type { PageFlip } from 'page-flip';
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
 	import 'iconify-icon';
 
-	const recipient = $page.url.searchParams.get('recipient') ?? 'You';
 	const TOTAL_PAGES = 5;
 	const PADDING_Y = 180;
 
@@ -24,7 +22,9 @@
 
 	let htmlParentElement: HTMLElement;
 
-	function initializePageFlip() {
+	async function initializePageFlip() {
+		const { PageFlip } = await import('page-flip');
+
 		let initialHeight = clientHeight - PADDING_Y;
 		let initialWidth = initialHeight / 1.41; // <- Based on A4 1:1.41 (h:w) ratio.
 
