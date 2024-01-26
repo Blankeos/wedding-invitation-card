@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<!-- <meta name="viewport" content="width=device-width, maximum-scale=1" /> -->
+	<title>Gian & Laiza's Wedding</title>
 </svelte:head>
 
 <slot />

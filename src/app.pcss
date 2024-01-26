@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;0,900;1,700&display=swap');
+
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+/* START Fonts */
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('/fonts/Gill Sans.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('/fonts/Gill Sans Bold.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('/fonts/Gill Sans Heavy.otf') format('opentype');
+	font-weight: 900; /* This is a common weight for heavy fonts */
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('/fonts/Gill Sans Medium.otf') format('opentype');
+	font-weight: 500; /* This is a common weight for medium fonts */
+}
+
+/* END Fonts */
+body {
+	font-family: 'Gill Sans';
+}
