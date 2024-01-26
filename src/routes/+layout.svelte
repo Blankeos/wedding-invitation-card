@@ -12,7 +12,7 @@
 	<meta property="og:site_name" content="Gian & Laiza's Wedding" />
 	<meta property="og:locale" content="en" />
 	<meta property="og:type" content="website" />
-	<!-- <meta property="og:url" content="URL of your website" /> -->
+	<meta property="og:url" content="https://gianlaiza-wedding.netlify.app" />
 	<meta property="og:title" content="Gian & Laiza's Wedding" />
 	<meta property="og:description" content="You're invited to Gian and Laiza's wedding." />
 	<meta property="og:image" content="/ogimage.png" />
