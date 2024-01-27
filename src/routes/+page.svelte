@@ -83,7 +83,7 @@
 </script>
 
 <div
-	class="relative grid h-dvh select-none place-items-center overflow-hidden"
+	class="relative grid h-dvh select-none place-items-center overflow-hidden bg-slate-50"
 	bind:clientHeight
 	bind:clientWidth
 >
@@ -104,51 +104,53 @@
 		</button>
 	</div>
 
-	<div class="relative flex select-none flex-col border border-transparent">
+	<div class="relative flex select-none flex-col">
 		<div
 			class="h-0.5 bg-[#768683] transition-all"
 			style={styleToCss({ width: `${(currentPage / (5 - 1)) * 100}%` })}
 		/>
-		<div bind:this={htmlParentElement} id="book" class="touch-none select-none bg-[#a2b0ad]">
-			<div class="my-page" data-density="hard">
-				<div class="h-full w-full">
-					<img
-						src="/invitation/page1.jpg"
-						class="pointer-events-none h-full w-full touch-none select-none"
-						alt="page 1"
-					/>
+		<div class="border-b border-l border-r">
+			<div bind:this={htmlParentElement} id="book" class="touch-none select-none bg-[#a2b0ad]">
+				<div class="my-page" data-density="hard">
+					<div class="h-full w-full">
+						<img
+							src="/invitation/page1.jpg"
+							class="pointer-events-none h-full w-full touch-none select-none"
+							alt="page 1"
+						/>
+					</div>
 				</div>
-			</div>
-			<div class="my-page">
-				<div class="h-full w-full">
-					<img
-						src="/invitation/page2.jpg"
-						class="pointer-events-none h-full w-full touch-none select-none"
-						alt="page 2"
-					/>
+				<div class="my-page">
+					<div class="h-full w-full">
+						<img
+							src="/invitation/page2.jpg"
+							class="pointer-events-none h-full w-full touch-none select-none"
+							alt="page 2"
+						/>
+					</div>
 				</div>
-			</div>
-			<div class="my-page">
-				<div class="h-full w-full">
-					<img
-						src="/invitation/page3.jpg"
-						class="pointer-events-none h-full w-full touch-none select-none"
-						alt="page 3"
-					/>
+				<div class="my-page">
+					<div class="h-full w-full">
+						<img
+							src="/invitation/page3.jpg"
+							class="pointer-events-none h-full w-full touch-none select-none"
+							alt="page 3"
+						/>
+					</div>
 				</div>
-			</div>
-			<div class="my-page">
-				<div class="h-full w-full">
-					<img
-						src="/invitation/page4.jpg"
-						class="pointer-events-none h-full w-full touch-none select-none"
-						alt="page 4"
-					/>
+				<div class="my-page">
+					<div class="h-full w-full">
+						<img
+							src="/invitation/page4.jpg"
+							class="pointer-events-none h-full w-full touch-none select-none"
+							alt="page 4"
+						/>
+					</div>
 				</div>
-			</div>
-			<div class="my-page bg-black" data-density="hard">
-				<div class="flex h-full w-full items-center">
-					<img src="/invitation/page5.jpg" class="pointer-events-none select-none" alt="page 5" />
+				<div class="my-page bg-black" data-density="hard">
+					<div class="flex h-full w-full items-center">
+						<img src="/invitation/page5.jpg" class="pointer-events-none select-none" alt="page 5" />
+					</div>
 				</div>
 			</div>
 		</div>
